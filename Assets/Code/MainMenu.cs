@@ -29,7 +29,7 @@ namespace Big2Game.CharacterSelect
             GM.UI.ShowTagline(false);
             GM.UI.ShowCenterButton(false);
             GM.UI.ShowExitButton(false);
-            SceneManager.LoadScene("CharacterSelect");
+            GM.ChangeScene("CharacterSelect");
         }
 
         void ExitApplication()

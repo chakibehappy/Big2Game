@@ -1,7 +1,6 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.SceneManagement;
 using DG.Tweening;
 
 namespace Big2Game.CharacterSelect
@@ -87,14 +86,14 @@ namespace Big2Game.CharacterSelect
         {
             GM.UI.ShowTagline(false);
             GM.UI.ShowConfirmButton(false);
-            SceneManager.LoadScene("GameTable");
+            GM.ChangeScene("GameTable");
         }
 
         void GoToMainMenuScene()
         {
             GM.UI.ShowTagline(false);
             GM.UI.HideAllButtons();
-            SceneManager.LoadScene("MainMenu");
+            GM.ChangeScene("MainMenu");
         }
     }
 }

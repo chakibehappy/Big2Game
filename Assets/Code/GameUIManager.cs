@@ -50,19 +50,16 @@ namespace Big2Game
         public GameObject coinResultUI;
         public TextMeshProUGUI txtCoinResult;
 
-        private void Awake()
-        {
-            ShowConfirmButton(false);
-            ShowTagline(false);
-            AssignConfirmButton();
-        }
-
         void Start()
         {
             GM = GameMaster.Instance;
+
+            ShowConfirmButton(false);
+            ShowTagline(false);
+            AssignAllButton();
         }
 
-        void AssignConfirmButton()
+        void AssignAllButton()
         {
             centerButton.onClick.RemoveAllListeners();
             centerButton.onClick.AddListener(() => { CenterButtonPress(); });

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Big2Game
 {
@@ -33,7 +34,36 @@ namespace Big2Game
 
         public AudioClip[] UISfxClip;
         public AudioClip bgmClip;
-        
+
+        private void Start()
+        {
+            SetScreenRatio();
+            SceneManager.sceneLoaded += CheckScreenRatio;
+        }
+
+        private void OnDestroy()
+        {
+            SceneManager.sceneLoaded -= CheckScreenRatio;
+        }
+
+        public void ChangeScene(string sceneName)
+        {
+            SceneManager.LoadScene(sceneName);
+        }
+
+        void CheckScreenRatio(Scene scene, LoadSceneMode loadSceneMode)
+        {
+            SetScreenRatio();
+        }
+
+        void SetScreenRatio()
+        {
+            if (Camera.main.aspect <= 1.4f)
+                Camera.main.orthographicSize = 7f;
+            else
+                Camera.main.orthographicSize = 5f;
+        }
+
         public void ShowPlayerStats()
         {
             UI.ShowPlayerCoins(true, Coins);
@@ -54,6 +84,9 @@ namespace Big2Game
 
         public void PlayBGM()
         {
+            if (BGM.isPlaying)
+                return;
+
             BGM.clip = bgmClip;
             BGM.ignoreListenerVolume = true;
             BGM.Play();

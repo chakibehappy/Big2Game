@@ -5,7 +5,6 @@ using DG.Tweening;
 using TMPro;
 using UnityEngine.EventSystems;
 using System.Linq;
-using UnityEngine.SceneManagement;
 
 namespace Big2Game
 {
@@ -72,6 +71,8 @@ namespace Big2Game
 
         public void Awake()
         {
+            Screen.sleepTimeout = SleepTimeout.NeverSleep;
+
             start = new GameStartState(this);
             splitCard = new SplitCardState(this);
             arrangingCard = new ArrangingCardState(this);
@@ -85,6 +86,8 @@ namespace Big2Game
 
         private void OnDestroy()
         {
+            Screen.sleepTimeout = SleepTimeout.SystemSetting;
+
             HideAllCards();
             GM.UI.OnBackButtonEvent -= BackToCharacterSelect;
         }
@@ -96,7 +99,7 @@ namespace Big2Game
 
         private void BackToCharacterSelect()
         {
-            SceneManager.LoadScene("CharacterSelect");
+            GM.ChangeScene("CharacterSelect");
         }
 
         protected override BaseState GetInitialState()

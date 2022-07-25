@@ -1300,7 +1300,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: ecd34084e46d2864c9e41aa95e589205, type: 3}
   - {fileID: 8300000, guid: 6c2d0ae1ad7b22f45a5c14097689f007, type: 3}
   - {fileID: 8300000, guid: e35a48d94a00d04408d4abc3e61d5cb3, type: 3}
-  bgmClip: {fileID: 0}
+  bgmClip: {fileID: 8300000, guid: bc9524c4bcf20a44d9d5610ded135f31, type: 3}
 --- !u!1 &4009416118842114985
 GameObject:
   m_ObjectHideFlags: 0
@@ -1559,6 +1559,7 @@ MonoBehaviour:
   confirmButton: {fileID: 1195214458}
   txtConfirmButton: {fileID: 4009416118842114987}
   backButton: {fileID: 898314275}
+  exitButton: {fileID: 3521321998906540029}
   txtTagLine: {fileID: 5880647668605483004}
   selectedCharacter: 0
   charSpriteIdle:
