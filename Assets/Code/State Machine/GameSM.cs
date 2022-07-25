@@ -45,6 +45,7 @@ namespace Big2Game
         public SpriteRenderer[] checkIconObj;
         public TextMeshPro[] txtPlayerCardCombo;
         public Sprite[] checkIcon;
+        public EventTrigger swapButton;
 
         [HideInInspector] public bool isSelectingCard = false;
         [HideInInspector] public SpriteRenderer selectedCard;

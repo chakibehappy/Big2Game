@@ -33,9 +33,8 @@ namespace Big2Game
 
             }
             gsm.suggestionComboSet = GetAllSuggestionCardSet(gsm.playerCardOnHand[0], out gsm.suggestionComboSetName);
-           
-            AssignClickableSuggestion();
-            AssignClickableOnCard();
+
+            AssignClickableObjects();
             ShowPlayerCardOnHand(gsm.playerCardOnHand[0]);
             CheckPlayerCardFormation();
         }
@@ -53,6 +52,13 @@ namespace Big2Game
             gsm.GM.UI.OnConfirmButtonEvent -= FinishArangingCard;
 
             stateMachine.ChangeState(gsm.scoringCard);
+        }
+
+        void AssignClickableObjects()
+        {
+            AssignClickableOnCard();
+            AssignClickableSuggestion();
+            AssignClickableOnSwapButton();
         }
 
         void AssignClickableOnCard()
@@ -155,6 +161,30 @@ namespace Big2Game
             }
 
             gsm.playerCardOnHand[0] = new List<Card>(gsm.suggestionComboSet[index]);
+            ShowPlayerCardOnHand(gsm.playerCardOnHand[0]);
+            CheckPlayerCardFormation();
+        }
+
+        private void AssignClickableOnSwapButton()
+        {
+            EventTrigger.Entry onClick = new EventTrigger.Entry();
+            onClick.eventID = EventTriggerType.PointerDown;
+            onClick.callback.AddListener((data) => { SwapMiddleToBackCard(); });
+            gsm.swapButton.triggers.Clear();
+            gsm.swapButton.triggers.Add(onClick);
+        }
+
+        void SwapMiddleToBackCard()
+        {
+            int[] middleOrder = new int[] { 3, 4, 5, 6, 7 };
+            int[] backOrder = new int[] { 8, 9, 10, 11, 12 };
+
+            for (int i = 0; i < 5; i++)
+            {
+                Card tempCard = gsm.playerCardOnHand[0][middleOrder[i]];
+                gsm.playerCardOnHand[0][middleOrder[i]] = gsm.playerCardOnHand[0][backOrder[i]];
+                gsm.playerCardOnHand[0][backOrder[i]] = tempCard;
+            }
             ShowPlayerCardOnHand(gsm.playerCardOnHand[0]);
             CheckPlayerCardFormation();
         }
