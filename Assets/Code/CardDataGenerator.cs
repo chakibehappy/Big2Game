@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 
 
 namespace Big2Game
@@ -88,7 +90,10 @@ namespace Big2Game
                     }
                 }
 
+#if UNITY_EDITOR
                 EditorUtility.SetDirty(deck);
+#endif
+
             }
         }
 
