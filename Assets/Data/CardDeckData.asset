@@ -1,0 +1,379 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc74f6c795f88aa4692d149d6dc589c0, type: 3}
+  m_Name: CardDeckData
+  m_EditorClassIdentifier: 
+  cards:
+  - Name: 2 of Spades
+    Value: 2
+    Label: 2
+    Type:
+      Symbol: 0
+      Color: 0
+    CardSprite: {fileID: -6175359046217299876, guid: c0a0473b073f5be4dbb7a29e1f828674, type: 3}
+  - Name: 3 of Spades
+    Value: 3
+    Label: 3
+    Type:
+      Symbol: 0
+      Color: 0
+    CardSprite: {fileID: -5412036360257342266, guid: c0a0473b073f5be4dbb7a29e1f828674, type: 3}
+  - Name: 4 of Spades
+    Value: 4
+    Label: 4
+    Type:
+      Symbol: 0
+      Color: 0
+    CardSprite: {fileID: -6192301973851004817, guid: c0a0473b073f5be4dbb7a29e1f828674, type: 3}
+  - Name: 5 of Spades
+    Value: 5
+    Label: 5
+    Type:
+      Symbol: 0
+      Color: 0
+    CardSprite: {fileID: 1859852474229646569, guid: c0a0473b073f5be4dbb7a29e1f828674, type: 3}
+  - Name: 6 of Spades
+    Value: 6
+    Label: 6
+    Type:
+      Symbol: 0
+      Color: 0
+    CardSprite: {fileID: -5691509078591409037, guid: c0a0473b073f5be4dbb7a29e1f828674, type: 3}
+  - Name: 7 of Spades
+    Value: 7
+    Label: 7
+    Type:
+      Symbol: 0
+      Color: 0
+    CardSprite: {fileID: -2086246731472233968, guid: c0a0473b073f5be4dbb7a29e1f828674, type: 3}
+  - Name: 8 of Spades
+    Value: 8
+    Label: 8
+    Type:
+      Symbol: 0
+      Color: 0
+    CardSprite: {fileID: 3902397526154481860, guid: c0a0473b073f5be4dbb7a29e1f828674, type: 3}
+  - Name: 9 of Spades
+    Value: 9
+    Label: 9
+    Type:
+      Symbol: 0
+      Color: 0
+    CardSprite: {fileID: 863128547774511389, guid: c0a0473b073f5be4dbb7a29e1f828674, type: 3}
+  - Name: 10 of Spades
+    Value: 10
+    Label: 10
+    Type:
+      Symbol: 0
+      Color: 0
+    CardSprite: {fileID: -4050063929172015956, guid: c0a0473b073f5be4dbb7a29e1f828674, type: 3}
+  - Name: Jack of Spades
+    Value: 11
+    Label: Jack
+    Type:
+      Symbol: 0
+      Color: 0
+    CardSprite: {fileID: -6768147078442640526, guid: c0a0473b073f5be4dbb7a29e1f828674, type: 3}
+  - Name: Queen of Spades
+    Value: 12
+    Label: Queen
+    Type:
+      Symbol: 0
+      Color: 0
+    CardSprite: {fileID: -5279216652917692210, guid: c0a0473b073f5be4dbb7a29e1f828674, type: 3}
+  - Name: King of Spades
+    Value: 13
+    Label: King
+    Type:
+      Symbol: 0
+      Color: 0
+    CardSprite: {fileID: -4088511106589471014, guid: c0a0473b073f5be4dbb7a29e1f828674, type: 3}
+  - Name: Ace of Spades
+    Value: 14
+    Label: Ace
+    Type:
+      Symbol: 0
+      Color: 0
+    CardSprite: {fileID: -3459218124231049851, guid: c0a0473b073f5be4dbb7a29e1f828674, type: 3}
+  - Name: 2 of Hearts
+    Value: 2
+    Label: 2
+    Type:
+      Symbol: 1
+      Color: 1
+    CardSprite: {fileID: -3714501648454680294, guid: 10bfa86f9414f6c45b6dfc278808deac, type: 3}
+  - Name: 3 of Hearts
+    Value: 3
+    Label: 3
+    Type:
+      Symbol: 1
+      Color: 1
+    CardSprite: {fileID: 5919034647658395431, guid: 10bfa86f9414f6c45b6dfc278808deac, type: 3}
+  - Name: 4 of Hearts
+    Value: 4
+    Label: 4
+    Type:
+      Symbol: 1
+      Color: 1
+    CardSprite: {fileID: -6881983071974073645, guid: 10bfa86f9414f6c45b6dfc278808deac, type: 3}
+  - Name: 5 of Hearts
+    Value: 5
+    Label: 5
+    Type:
+      Symbol: 1
+      Color: 1
+    CardSprite: {fileID: -5584774392066997033, guid: 10bfa86f9414f6c45b6dfc278808deac, type: 3}
+  - Name: 6 of Hearts
+    Value: 6
+    Label: 6
+    Type:
+      Symbol: 1
+      Color: 1
+    CardSprite: {fileID: -7911328265647501075, guid: 10bfa86f9414f6c45b6dfc278808deac, type: 3}
+  - Name: 7 of Hearts
+    Value: 7
+    Label: 7
+    Type:
+      Symbol: 1
+      Color: 1
+    CardSprite: {fileID: -3315439057172001719, guid: 10bfa86f9414f6c45b6dfc278808deac, type: 3}
+  - Name: 8 of Hearts
+    Value: 8
+    Label: 8
+    Type:
+      Symbol: 1
+      Color: 1
+    CardSprite: {fileID: 966379951910305096, guid: 10bfa86f9414f6c45b6dfc278808deac, type: 3}
+  - Name: 9 of Hearts
+    Value: 9
+    Label: 9
+    Type:
+      Symbol: 1
+      Color: 1
+    CardSprite: {fileID: 4754689701375480794, guid: 10bfa86f9414f6c45b6dfc278808deac, type: 3}
+  - Name: 10 of Hearts
+    Value: 10
+    Label: 10
+    Type:
+      Symbol: 1
+      Color: 1
+    CardSprite: {fileID: -7113643810844129825, guid: 10bfa86f9414f6c45b6dfc278808deac, type: 3}
+  - Name: Jack of Hearts
+    Value: 11
+    Label: Jack
+    Type:
+      Symbol: 1
+      Color: 1
+    CardSprite: {fileID: -7904750308425557753, guid: 10bfa86f9414f6c45b6dfc278808deac, type: 3}
+  - Name: Queen of Hearts
+    Value: 12
+    Label: Queen
+    Type:
+      Symbol: 1
+      Color: 1
+    CardSprite: {fileID: 3852972636999038198, guid: 10bfa86f9414f6c45b6dfc278808deac, type: 3}
+  - Name: King of Hearts
+    Value: 13
+    Label: King
+    Type:
+      Symbol: 1
+      Color: 1
+    CardSprite: {fileID: 3091929774131988872, guid: 10bfa86f9414f6c45b6dfc278808deac, type: 3}
+  - Name: Ace of Hearts
+    Value: 14
+    Label: Ace
+    Type:
+      Symbol: 1
+      Color: 1
+    CardSprite: {fileID: 6101909847720824691, guid: 10bfa86f9414f6c45b6dfc278808deac, type: 3}
+  - Name: 2 of Clubs
+    Value: 2
+    Label: 2
+    Type:
+      Symbol: 2
+      Color: 0
+    CardSprite: {fileID: 1439552212450677574, guid: 90deecbefd844b74e8d0e36cb76c0621, type: 3}
+  - Name: 3 of Clubs
+    Value: 3
+    Label: 3
+    Type:
+      Symbol: 2
+      Color: 0
+    CardSprite: {fileID: -1706316464791488162, guid: 90deecbefd844b74e8d0e36cb76c0621, type: 3}
+  - Name: 4 of Clubs
+    Value: 4
+    Label: 4
+    Type:
+      Symbol: 2
+      Color: 0
+    CardSprite: {fileID: 4474445961362127918, guid: 90deecbefd844b74e8d0e36cb76c0621, type: 3}
+  - Name: 5 of Clubs
+    Value: 5
+    Label: 5
+    Type:
+      Symbol: 2
+      Color: 0
+    CardSprite: {fileID: 5727154335831351566, guid: 90deecbefd844b74e8d0e36cb76c0621, type: 3}
+  - Name: 6 of Clubs
+    Value: 6
+    Label: 6
+    Type:
+      Symbol: 2
+      Color: 0
+    CardSprite: {fileID: 3233305851659467423, guid: 90deecbefd844b74e8d0e36cb76c0621, type: 3}
+  - Name: 7 of Clubs
+    Value: 7
+    Label: 7
+    Type:
+      Symbol: 2
+      Color: 0
+    CardSprite: {fileID: -8636325678081988630, guid: 90deecbefd844b74e8d0e36cb76c0621, type: 3}
+  - Name: 8 of Clubs
+    Value: 8
+    Label: 8
+    Type:
+      Symbol: 2
+      Color: 0
+    CardSprite: {fileID: -6787983972069634688, guid: 90deecbefd844b74e8d0e36cb76c0621, type: 3}
+  - Name: 9 of Clubs
+    Value: 9
+    Label: 9
+    Type:
+      Symbol: 2
+      Color: 0
+    CardSprite: {fileID: -694839223757956958, guid: 90deecbefd844b74e8d0e36cb76c0621, type: 3}
+  - Name: 10 of Clubs
+    Value: 10
+    Label: 10
+    Type:
+      Symbol: 2
+      Color: 0
+    CardSprite: {fileID: 7056253774007903828, guid: 90deecbefd844b74e8d0e36cb76c0621, type: 3}
+  - Name: Jack of Clubs
+    Value: 11
+    Label: Jack
+    Type:
+      Symbol: 2
+      Color: 0
+    CardSprite: {fileID: -1708945498261190199, guid: 90deecbefd844b74e8d0e36cb76c0621, type: 3}
+  - Name: Queen of Clubs
+    Value: 12
+    Label: Queen
+    Type:
+      Symbol: 2
+      Color: 0
+    CardSprite: {fileID: 7494567113633315759, guid: 90deecbefd844b74e8d0e36cb76c0621, type: 3}
+  - Name: King of Clubs
+    Value: 13
+    Label: King
+    Type:
+      Symbol: 2
+      Color: 0
+    CardSprite: {fileID: -4586537345484073161, guid: 90deecbefd844b74e8d0e36cb76c0621, type: 3}
+  - Name: Ace of Clubs
+    Value: 14
+    Label: Ace
+    Type:
+      Symbol: 2
+      Color: 0
+    CardSprite: {fileID: 5478412513192819998, guid: 90deecbefd844b74e8d0e36cb76c0621, type: 3}
+  - Name: 2 of Diamonds
+    Value: 2
+    Label: 2
+    Type:
+      Symbol: 3
+      Color: 1
+    CardSprite: {fileID: -7404134564713657383, guid: d27e6b25c3aa862429a9c290a2db9d1c, type: 3}
+  - Name: 3 of Diamonds
+    Value: 3
+    Label: 3
+    Type:
+      Symbol: 3
+      Color: 1
+    CardSprite: {fileID: -7708260812685289156, guid: d27e6b25c3aa862429a9c290a2db9d1c, type: 3}
+  - Name: 4 of Diamonds
+    Value: 4
+    Label: 4
+    Type:
+      Symbol: 3
+      Color: 1
+    CardSprite: {fileID: 5346005466920507480, guid: d27e6b25c3aa862429a9c290a2db9d1c, type: 3}
+  - Name: 5 of Diamonds
+    Value: 5
+    Label: 5
+    Type:
+      Symbol: 3
+      Color: 1
+    CardSprite: {fileID: -4652008636644449739, guid: d27e6b25c3aa862429a9c290a2db9d1c, type: 3}
+  - Name: 6 of Diamonds
+    Value: 6
+    Label: 6
+    Type:
+      Symbol: 3
+      Color: 1
+    CardSprite: {fileID: 1362722535490242204, guid: d27e6b25c3aa862429a9c290a2db9d1c, type: 3}
+  - Name: 7 of Diamonds
+    Value: 7
+    Label: 7
+    Type:
+      Symbol: 3
+      Color: 1
+    CardSprite: {fileID: -8057227524475221626, guid: d27e6b25c3aa862429a9c290a2db9d1c, type: 3}
+  - Name: 8 of Diamonds
+    Value: 8
+    Label: 8
+    Type:
+      Symbol: 3
+      Color: 1
+    CardSprite: {fileID: -264510360276162441, guid: d27e6b25c3aa862429a9c290a2db9d1c, type: 3}
+  - Name: 9 of Diamonds
+    Value: 9
+    Label: 9
+    Type:
+      Symbol: 3
+      Color: 1
+    CardSprite: {fileID: -297138759448243075, guid: d27e6b25c3aa862429a9c290a2db9d1c, type: 3}
+  - Name: 10 of Diamonds
+    Value: 10
+    Label: 10
+    Type:
+      Symbol: 3
+      Color: 1
+    CardSprite: {fileID: -2931403130144339579, guid: d27e6b25c3aa862429a9c290a2db9d1c, type: 3}
+  - Name: Jack of Diamonds
+    Value: 11
+    Label: Jack
+    Type:
+      Symbol: 3
+      Color: 1
+    CardSprite: {fileID: -6898703028359308144, guid: d27e6b25c3aa862429a9c290a2db9d1c, type: 3}
+  - Name: Queen of Diamonds
+    Value: 12
+    Label: Queen
+    Type:
+      Symbol: 3
+      Color: 1
+    CardSprite: {fileID: -5830135586705797774, guid: d27e6b25c3aa862429a9c290a2db9d1c, type: 3}
+  - Name: King of Diamonds
+    Value: 13
+    Label: King
+    Type:
+      Symbol: 3
+      Color: 1
+    CardSprite: {fileID: 601697941622799858, guid: d27e6b25c3aa862429a9c290a2db9d1c, type: 3}
+  - Name: Ace of Diamonds
+    Value: 14
+    Label: Ace
+    Type:
+      Symbol: 3
+      Color: 1
+    CardSprite: {fileID: 1772813691482780900, guid: d27e6b25c3aa862429a9c290a2db9d1c, type: 3}
