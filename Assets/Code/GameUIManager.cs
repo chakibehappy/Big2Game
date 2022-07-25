@@ -28,6 +28,11 @@ namespace Big2Game
         public delegate void OnBackPress();
         public event OnBackPress OnBackButtonEvent;
 
+        public Button exitButton;
+
+        public delegate void OnExitPress();
+        public event OnExitPress OnExitButtonEvent;
+
         public TextMeshProUGUI txtTagLine;
 
         [HideInInspector]
@@ -67,6 +72,9 @@ namespace Big2Game
 
             backButton.onClick.RemoveAllListeners();
             backButton.onClick.AddListener(() => { BackButtonPress(); });
+
+            exitButton.onClick.RemoveAllListeners();
+            exitButton.onClick.AddListener(() => { ExitButtonPress(); });
         }
 
         void CenterButtonPress()
@@ -103,6 +111,16 @@ namespace Big2Game
         public void ShowBackButton(bool isShow = true)
         {
             backButton.gameObject.SetActive(isShow);
+        }
+
+        void ExitButtonPress()
+        {
+            OnBackButtonEvent?.Invoke();
+        }
+
+        public void ShowExitButton(bool isShow = true)
+        {
+            exitButton.gameObject.SetActive(isShow);
         }
 
         public void HideAllButtons()

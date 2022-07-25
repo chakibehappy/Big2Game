@@ -83,8 +83,12 @@ namespace Big2Game
             }
             gsm.GM.StopSFX();
             gsm.PlaySFX(3);
-            yield return new WaitForSeconds(gsm.sfxClip[3].length);
-            gsm.PlaySFX(Random.Range(4, 10));
+            
+            if (gsm.playerPoints[0] > 0)
+            {
+                yield return new WaitForSeconds(gsm.sfxClip[3].length);
+                gsm.PlaySFX(Random.Range(4, 10));
+            }
 
             yield return new WaitForSeconds(1.5f);
 
