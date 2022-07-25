@@ -115,7 +115,7 @@ namespace Big2Game
 
         void ExitButtonPress()
         {
-            OnBackButtonEvent?.Invoke();
+            OnExitButtonEvent?.Invoke();
         }
 
         public void ShowExitButton(bool isShow = true)
